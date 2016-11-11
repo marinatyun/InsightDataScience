@@ -62,12 +62,12 @@ class PayMo:
 			fout.write('unverified\n')
 
 	def __isFriend(self, id1, id2, depth):
-		"""
+	    """
 		Return true if id2 are in id1's maxDepth degree friends network.
 		  - id1 : Id of the first user
-		  - id2 : Id of the second user
+			- id2 : Id of the second user
 			- maxDepth : = 1 for feature 1, = 2 for feature 2, = 4 for feature 4
-	  """
+		"""
 		if id1 not in self.network or id2 not in self.network:
 			return False
 		depth1 = int(depth/2)
